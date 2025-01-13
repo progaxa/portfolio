@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container p {
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact a{
+    /* color:blue; */
+    color: black;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+#contact a:hover {
+    color: #0000FF;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.project {
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* When over 1400px then do stuff */
+@media only screen and (min-width: 1400px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .project {
+        padding: 5rem;
+        margin: 5rem;
+    }
+    footer {
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    footer {
+        position:absolute;
+        bottom: 0;
+    }
+}
+
+.project strong {
+    margin: 0 0 1rem;
+    font-size: larger;
+    text-decoration: underline;
+}
+.project strong:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    /* position:absolute; */
+
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    /* margin-top: 2rem; */
+
+    /* bottom: 0%; */
+    width: 100%;
+}
+.project-image {
+    max-width: 90%;
+    border-radius: 1%;
+}

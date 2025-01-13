@@ -1,10 +1,50 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <script>
+        function openProject(file_path) {
+            window.location.href = file_path;
+        }
+    </script>
+    <header>
+        <div class="container">
+            <h1>Niklas Tähtisaari</h1>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hey, my name is Niklas Tähtisaari and I'm a computer science student at OSAO.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project" >
+                    <div onclick="openProject('grassman.html')"><strong>Grassman</strong></div>
+                    <p>2D platformer game made with godot.</p>
+                </div>
+                <div class="project">
+                    <div onclick="openProject('3Dgame.html')"><strong>3D game</strong></div>
+                    <p>3D game made with unity.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <a href="https://github.com/progaxa">Github</a>
+            <a href="mailto:ntahtisaari@gmail.com">Email</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Niklas Tähtisaari. All rights reserved.</p>
+    </footer>
 </body>
 </html>
